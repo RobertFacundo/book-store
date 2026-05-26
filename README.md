@@ -108,6 +108,7 @@ The main goal is maintaining:
 - Scalability
 - Clean code practices
 - Maintainable structure
+- 
 ---
 ## ⚠️ Status
 
