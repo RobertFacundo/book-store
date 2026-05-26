@@ -1,36 +1,123 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📚 Book Store Ecommerce
 
-## Getting Started
+A modern and immersive bookstore ecommerce built with Next.js, TypeScript, and Tailwind CSS.  
+Focused on scalable architecture, reusable components, responsive design, and clean development practices.
 
-First, run the development server:
+> ⚠️ Work in Progress — currently under active development.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## ✨ Overview
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+This project aims to recreate a cinematic and premium bookstore experience with:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Responsive UI
+- Reusable and abstracted components
+- Modern frontend architecture
+- Smooth UX interactions
+- Scalable state management
+- Optimized data fetching
 
-## Learn More
+The goal is not only building an ecommerce, but also following professional frontend development practices throughout the entire project.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🛠️ Tech Stack
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Frontend
 
-## Deploy on Vercel
+- ⚛️ React
+- ▲ Next.js (App Router)
+- 🟦 TypeScript
+- 🎨 Tailwind CSS
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### State & Data Management
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- 🐻 Zustand
+- ⚡ TanStack Query (React Query)
+
+### Animation & UX
+
+- 🎞️ GSAP
+- 🌊 Lenis Smooth Scroll
+- ✨ Cinematic Transitions
+- 🎯 Scroll-Based Animations
+
+### UI & Utilities
+
+- 🎯 Lucide React
+- 🪝 Custom Hooks
+- 📱 Responsive Design
+- ♻️ Reusable Components
+
+---
+
+## 🚀 Features
+
+### Current Features
+
+- ✅ Responsive Navbar
+- ✅ Mobile Menu
+- ✅ Active Navigation Links
+- ✅ Click Outside Detection
+- ✅ Reusable Navigation Components
+- ✅ Clean Folder Architecture
+
+### Planned Features
+
+- 📚 Book Catalog
+- 🔎 Search & Filters
+- 🛒 Shopping Cart
+- ❤️ Wishlist
+- 👤 User Authentication
+- 💳 Checkout Flow
+- 🌙 Cinematic Hero Section
+- 📖 Book Detail Pages
+- ⭐ Featured Books
+- 📱 Fully Responsive Layout
+- ⚡ Optimized Fetching & Caching
+
+---
+
+## 🧱 Architecture Goals
+
+This project is being developed with a strong focus on:
+
+- Component abstraction
+- Scalability
+- Reusability
+- Clean code practices
+- Feature-based architecture
+- Separation of concerns
+- Maintainable folder structure
+- Responsive-first development
+
+---
+## 📂 Project Structure
+
+The project follows a modular and scalable architecture based on:
+
+- `features/` → business logic and isolated application features
+- `shared/` → reusable components, hooks, constants, and utilities
+- `app/` → Next.js App Router pages and layouts
+
+The main goal is maintaining:
+
+- Reusability
+- Separation of concerns
+- Scalability
+- Clean code practices
+- Maintainable structure
+---
+## ⚠️ Status
+
+This project is currently a WIP (Work In Progress).
+
+New features, refactors, UI improvements, and optimizations are continuously being added.
+
+## 📬 Contact
+
+- Email: robertf.coder@gmail.com  
+- LinkedIn: https://www.linkedin.com/in/robertfacundodev/  
+- Portfolio: https://facundorobert.vercel.app/  
+- GitHub: https://github.com/RobertFacundo  
