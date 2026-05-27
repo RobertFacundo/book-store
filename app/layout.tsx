@@ -1,16 +1,24 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter, Italianno, Bellefair} from "next/font/google";
 import "./globals.css";
 import NavBar from "@/shared/components/navigation/NavBar";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const italiano = Italianno({
+  variable: "--font-display",
   subsets: ["latin"],
+  weight: "400",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const belleFair = Bellefair({
+  variable: "--font-ui",
   subsets: ["latin"],
+  weight: "400",
+});
+
+const inter = Inter({
+  variable: "--font-custom",
+  subsets: ["latin"],
+  weight: "400",
 });
 
 export const metadata: Metadata = {
@@ -26,11 +34,12 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${italiano.variable} ${belleFair.variable} ${inter.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">
-        <NavBar/>
-        {children}</body>
+      <body className="font-[family-name:var(--font-ui)] min-h-full">
+        <NavBar />
+        {children}
+      </body>
     </html>
   );
 }

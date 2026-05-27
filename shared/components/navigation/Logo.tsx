@@ -7,7 +7,9 @@ const Logo = () => {
         <Link href="/"
             className="
         flex items-center gap-3
-        transition-opacity hover:opacity-80
+         transition-all duration-800 ease-in-out
+        hover:scale-105
+
       "
         >
             <Image
@@ -15,11 +17,12 @@ const Logo = () => {
                 alt="Book Store logo"
                 width={70}
                 height={70}
+                 className="transition-all duration-500 ease-in-out hover:drop-shadow-[0_0_10px_rgba(234,179,8,0.7)]"
             />
 
-            <h1 className="text-white text-sm font-semibold">
+            {/* <h1 className="font-[family-name:var(--font-display)] tracking-widest text-white text-4xl font-light">
                 Book Store
-            </h1>
+            </h1> */}
         </Link>
     )
 };
