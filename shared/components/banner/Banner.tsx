@@ -1,4 +1,4 @@
-import { BannerItems } from "../../constants/BannerItems";
+import { BannerItems } from "../../data/BannerItems";
 import BannerItem from "./BannerItem";
 
 const Banner = () => {

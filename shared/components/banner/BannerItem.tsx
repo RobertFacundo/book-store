@@ -1,4 +1,4 @@
-import { BannerItemtype } from "@/shared/constants/BannerItems";
+import { BannerItemtype } from "@/shared/data/BannerItems";
 
 type BannerItemProps={
     item: BannerItemtype

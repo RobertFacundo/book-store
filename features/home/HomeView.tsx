@@ -1,4 +1,5 @@
-import HeroSection from './components/HeroSection';
+import CategoriesSection from './components/categories/CategoriesSection';
+import HeroSection from './components/hero/HeroSection';
 import Banner from '@/shared/components/banner/Banner';
 
 const HomeView = () => {
@@ -6,6 +7,7 @@ const HomeView = () => {
         <>
             <HeroSection />
             <Banner />
+            <CategoriesSection/>
         </>
     )
 };

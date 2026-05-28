@@ -1,5 +1,5 @@
 "use client"
-import { NavigationLinks } from "@/shared/constants/NavigationLinks";
+import { NavigationLinks } from "@/shared/data/NavigationLinks";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
