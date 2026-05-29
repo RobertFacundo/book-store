@@ -14,7 +14,7 @@ const CategoryCard = ({ item }: CategoryCardProps) => {
             <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent z-10" />
             <div className="absolute left-0 bottom-0 z-50 flex flex-col gap-4  p-3">
                 <Icon size={40} strokeWidth={1.2} className="text-yellow-500/80" />
-                <div className="flex flex-row text-white items-center gap-1 hover:scale-105 hover:text-yellow-500 transition-all ease-in-out duration-600">
+                <div className="flex flex-row text-white items-center gap-1 hover:scale-105 hover:text-yellow-500 transition-all ease-in-out duration-500">
                     <h3 className="cursor-pointer text-2xl font-semibold tracking-widest">{title}</h3>
                     <ArrowRight size={16} />
                 </div>
