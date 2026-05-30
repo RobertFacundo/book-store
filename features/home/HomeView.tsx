@@ -1,3 +1,4 @@
+import Quote from './components/quote/Quote';
 import BestSellersSection from './components/bestSellers/BestSellersSection';
 import CategoriesSection from './components/categories/CategoriesSection';
 import HeroSection from './components/hero/HeroSection';
@@ -8,8 +9,9 @@ const HomeView = () => {
         <>
             <HeroSection />
             <Banner />
-            <CategoriesSection/>
-            <BestSellersSection/>
+            <CategoriesSection />
+            <BestSellersSection />
+            <Quote />
         </>
     )
 };

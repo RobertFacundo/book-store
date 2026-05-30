@@ -6,7 +6,7 @@ import GridLayoutContainer from "@/shared/components/layout/GridLayoutContainer"
 
 const BestSellersSection = () => {
     return (
-        <SectionLayout className="md:px-4">
+        <SectionLayout className="md:px-4 pb-10">
             <TitleSection title="Best sellers" />
             <GridLayoutContainer>
                 {bestSellers.map((item) => (
