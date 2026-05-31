@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Italianno, Bellefair} from "next/font/google";
 import "./globals.css";
 import NavBar from "@/shared/components/navigation/NavBar";
+import Footer from "@/shared/components/footer/Footer";
 
 const italiano = Italianno({
   variable: "--font-display",
@@ -39,6 +40,7 @@ export default function RootLayout({
       <body className="font-[family-name:var(--font-ui)] min-h-full">
         <NavBar />
         {children}
+        <Footer/>
       </body>
     </html>
   );
