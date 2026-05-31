@@ -6,7 +6,7 @@ type StarsProps = {
 
 const Stars = ({ rating }: StarsProps) => {
     return (
-        <div className="flex gap-1 text-yellow-500">
+        <div className="flex gap-1 text-yellow-900">
             {Array.from({ length: 5 }).map((_, i) => {
 
                 return (
