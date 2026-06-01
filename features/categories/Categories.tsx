@@ -1,6 +1,12 @@
+import HeroCategoriesSection from "./components/hero/HeroCategoriesSection";
+import ProductsSection from "./components/products/ProductsSection";
+
 const Categories = () => {
     return (
-       <h1>categories</h1>
+        <>
+            <HeroCategoriesSection />
+            <ProductsSection/>
+        </>
     )
 };
 

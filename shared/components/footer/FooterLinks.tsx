@@ -25,7 +25,7 @@ const FooterLinks = () => {
                      </h3>
                      <ul className="flex flex-col items-center lg:space-y-2 text-zinc-400 lg:text-base text-[13px]">
                          {link.items?.map(item => (
-                             <li className="nav-link w-fit cursor-pointer hover:text-yellow-500/70">{item}</li>
+                             <li key={item} className="nav-link w-fit cursor-pointer hover:text-yellow-500/70">{item}</li>
                          ))}
                      </ul>
                  </div>

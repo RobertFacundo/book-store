@@ -10,12 +10,13 @@ export type categoryType = {
     icon: LucideIcon;
     title: string;
     image: StaticImageData;
+    slug: string;
 }
 
 export const categories: categoryType[] = [
-    { icon: MoonStar, title: "Fantasy", image: fantasy },
-    { icon: Search, title: "Mistery", image: mistery },
-    { icon: Heart, title: "Romance", image: romance },
-    { icon: Rocket, title: "Science Fiction", image: scienceFiction },
-    { icon: Landmark, title: "Classic", image: classic },
+    { icon: MoonStar, title: "Fantasy", image: fantasy, slug: "fantasy"},
+    { icon: Search, title: "Mistery", image: mistery, slug: "mistery"},
+    { icon: Heart, title: "Romance", image: romance, slug: "romance"},
+    { icon: Rocket, title: "Science Fiction", image: scienceFiction, slug: "science-fiction" },
+    { icon: Landmark, title: "Classic", image: classic, slug: "classic" },
 ];
