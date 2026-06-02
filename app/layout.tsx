@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
-import { Inter, Italianno, Bellefair} from "next/font/google";
+import { Inter, Italianno, Bellefair } from "next/font/google";
 import "./globals.css";
 import NavBar from "@/shared/components/navigation/NavBar";
 import Footer from "@/shared/components/footer/Footer";
+import ReactQueryProvider from "@/shared/providers/ReactQueryProvider";
 
 const italiano = Italianno({
   variable: "--font-display",
@@ -37,11 +38,13 @@ export default function RootLayout({
       lang="en"
       className={`${italiano.variable} ${belleFair.variable} ${inter.variable} h-full antialiased`}
     >
-      <body className="font-[family-name:var(--font-ui)] min-h-full">
-        <NavBar />
-        {children}
-        <Footer/>
-      </body>
+      <ReactQueryProvider>
+        <body className="font-[family-name:var(--font-ui)] min-h-full">
+          <NavBar />
+          {children}
+          <Footer />
+        </body>
+      </ReactQueryProvider>
     </html>
   );
 }

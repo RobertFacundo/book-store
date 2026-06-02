@@ -8,7 +8,7 @@ const BestSellersSection = () => {
     return (
         <SectionLayout className="md:px-4 pb-10">
             <TitleSection title="Best sellers" />
-            <GridLayoutContainer>
+            <GridLayoutContainer className="grid-cols-1">
                 {bestSellers.map((item) => (
                     <BestSellersCard key={item.id} item={item} />
                 ))}
