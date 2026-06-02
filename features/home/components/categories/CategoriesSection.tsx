@@ -9,7 +9,7 @@ const CategoriesSection = () => {
     return (
         <SectionLayout className="md:px-18">
             <TitleSection title="Explore by genre" />
-            <GridLayoutContainer>
+            <GridLayoutContainer className="">
                 {categories.map((item) => (
                     <Link href={`/categories/${item.slug}`}  key={item.slug} >
                         <CategoryCard item={item} />
