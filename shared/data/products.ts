@@ -3,7 +3,7 @@ import fantasyBook from '@/shared/assets/images/covers/fantasyCover.png'
 import mysteryBook from '@/shared/assets/images/covers/mysteryCover.png'
 import romanceBook from '@/shared/assets/images/covers/romanceCover.png'
 import scienceFictionBook from '@/shared/assets/images/covers/scienceFictionCover.png'
-// import classicBook from '@/shared/assets/images/covers/classicCover.png'
+import classicBook from '@/shared/assets/images/covers/classicCover.png'
 
 export type ProductType = {
     id: number;
@@ -63,7 +63,7 @@ const baseProducts: Omit<ProductType, "id" | "title" | "price" | "rating" | "yea
     },
     {
         category: "classic",
-        image: scienceFictionBook,
+        image: classicBook,
         author: "J. Archive",
         quote: "Timeless stories live forever.",
         pageCount: 420,
