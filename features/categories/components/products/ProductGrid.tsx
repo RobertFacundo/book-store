@@ -1,36 +1,33 @@
 "use client"
 
-import { useState, useEffect } from "react";
-import { useProducts } from "@/shared/hooks/useProducts";
 import ProductCard from "./ProductCard";
 import GridLayoutContainer from "@/shared/components/layout/GridLayoutContainer";
 import Pagination from "./Pagination";
 import ProductGridSkeleton from "@/shared/components/ui/ProductGridSkeleton";
-import { useFiltersStore } from "@/shared/store/filters/useFiltersStore";
+import { useProductGrid } from "../../hooks/useProductGrid";
 
 const ProductGrid = () => {
-    const [page, setPage] = useState(1);
-    const pageSize = 10;
-    const categories = useFiltersStore((state) => state.categories)
-    const { data: products, isLoading } = useProducts(page, pageSize, categories);
-
-    useEffect(() => {
-        setPage(1);
-    }, [categories]);
+    const {
+        page,
+        setPage,
+        data,
+        isLoading,
+        totalPages,
+    } = useProductGrid();
 
     return (
         <div className="flex flex-col gap-6">
-
+            <Pagination page={page} setPage={setPage} totalPages={totalPages} />
             {isLoading ? (
                 <ProductGridSkeleton />
             ) : (
                 <GridLayoutContainer className="grid-cols-2">
-                    {products?.map(product => (
+                    {data?.products.map(product => (
                         <ProductCard key={product.id} product={product} />
                     ))}
                 </GridLayoutContainer>
             )}
-            <Pagination page={page} setPage={setPage} />
+            <Pagination page={page} setPage={setPage} totalPages={totalPages} />
         </div>
     )
 };

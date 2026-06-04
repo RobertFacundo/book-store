@@ -19,7 +19,7 @@ type FiltersStore = {
 
 export const useFiltersStore = create<FiltersStore>((set) => ({
     categories: [],
-    maxPrice: 100,
+    maxPrice: 33,
     toggleCategory: (category) =>
         set((state) => ({
             categories: state.categories.includes(category)

@@ -49,3 +49,31 @@ input:-webkit-autofill:active {
 .pagination-link {
   @apply font-[family-name:var(--font-ui)] text-xl cursor-pointer transition-all ease-in-out duration-600 hover:text-yellow-500 hover:scale-110;
 }
+
+.slider-yellow {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 6px;
+  background: #27272a; /* zinc-800 */
+  border-radius: 999px;
+}
+
+/* thumb (la bolita) */
+.slider-yellow::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  background: #eab308; /* yellow-500 */
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Firefox */
+.slider-yellow::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  background: #eab308;
+  border-radius: 50%;
+  cursor: pointer;
+}

@@ -2,10 +2,18 @@
 import { useQuery } from "@tanstack/react-query";
 import { getProducts } from "@/shared/api/products";
 import { ProductType } from "../data/products";
+import { keepPreviousData } from "@tanstack/react-query";
 
-export const useProducts = (page: number, pageSize: number, categories: string[]) => {
-    return useQuery<ProductType[]>({
-        queryKey: ["products", page, categories],
-        queryFn: () => getProducts(page, pageSize, categories),
+type ProductsResponse = {
+    products: ProductType[];
+    total: number;
+};
+
+
+export const useProducts = (page: number, pageSize: number, sortedCategories: string[], maxPrice: number) => {
+    return useQuery<ProductsResponse>({
+        queryKey: ["products", page, sortedCategories, maxPrice],
+        queryFn: () => getProducts(page, pageSize, sortedCategories, maxPrice),
+        placeholderData: keepPreviousData
     });
 }
