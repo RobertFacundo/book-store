@@ -11,7 +11,7 @@ const CategoriesSection = () => {
             <TitleSection title="Explore by genre" />
             <GridLayoutContainer className="">
                 {categories.map((item) => (
-                    <Link href={`/categories/${item.slug}`}  key={item.slug} >
+                    <Link href="/categories"  key={item.slug} >
                         <CategoryCard item={item} />
                     </Link>
                 ))}

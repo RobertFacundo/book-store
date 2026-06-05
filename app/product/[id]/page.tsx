@@ -1,7 +1,14 @@
-import Categories from "@/features/categories/Categories";
+import ProductDetail from "@/features/product/ProductDetail";
 
-const CategoriesPage = () => {
-  return <Categories />;
+type Props = {
+  params:Promise<{
+    id:string;
+  }>;
 };
 
-export default CategoriesPage;
+const ProductDetailPage = async ({params}:Props) => {
+  const {id} = await params;
+  return <ProductDetail productId={id}/>;
+};
+
+export default ProductDetailPage;
