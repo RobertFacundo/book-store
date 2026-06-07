@@ -35,7 +35,7 @@ const baseProducts: Omit<ProductType, "id" | "title" | "price" | "rating" | "yea
         author: "A. Mystic",
         quote: "Magic is never random.",
         pageCount: 400,
-        synopsis: "Lorem ipsum fantasy..."
+        synopsis: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus eveniet nam modi magnam at sunt laudantium officiis aperiam, iste obcaecati sit distinctio exercitationem dicta itaque praesentium ullam quisquam tempora! Quod. Inventore voluptas cum ea unde dolorem dicta laboriosam corporis! Deserunt, adipisci ex cupiditate veritatis commodi non voluptatibus vitae culpa ad fuga"
     },
     {
         category: "mystery",
@@ -43,7 +43,7 @@ const baseProducts: Omit<ProductType, "id" | "title" | "price" | "rating" | "yea
         author: "L. Noir",
         quote: "Nothing is what it seems.",
         pageCount: 350,
-        synopsis: "Lorem ipsum mystery..."
+        synopsis: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus eveniet nam modi magnam at sunt laudantium officiis aperiam, iste obcaecati sit distinctio exercitationem dicta itaque praesentium ullam quisquam tempora! Quod. Inventore voluptas cum ea unde dolorem dicta laboriosam corporis! Deserunt, adipisci ex cupiditate veritatis commodi non voluptatibus vitae culpa ad fuga"
     },
     {
         category: "romance",
@@ -51,7 +51,7 @@ const baseProducts: Omit<ProductType, "id" | "title" | "price" | "rating" | "yea
         author: "E. Heart",
         quote: "Love changes everything.",
         pageCount: 320,
-        synopsis: "Lorem ipsum romance..."
+        synopsis: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus eveniet nam modi magnam at sunt laudantium officiis aperiam, iste obcaecati sit distinctio exercitationem dicta itaque praesentium ullam quisquam tempora! Quod. Inventore voluptas cum ea unde dolorem dicta laboriosam corporis! Deserunt, adipisci ex cupiditate veritatis commodi non voluptatibus vitae culpa ad fuga"
     },
     {
         category: "science-fiction",
@@ -59,7 +59,7 @@ const baseProducts: Omit<ProductType, "id" | "title" | "price" | "rating" | "yea
         author: "Z. Nova",
         quote: "The future is unstable.",
         pageCount: 500,
-        synopsis: "Lorem ipsum sci-fi..."
+        synopsis: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus eveniet nam modi magnam at sunt laudantium officiis aperiam, iste obcaecati sit distinctio exercitationem dicta itaque praesentium ullam quisquam tempora! Quod. Inventore voluptas cum ea unde dolorem dicta laboriosam corporis! Deserunt, adipisci ex cupiditate veritatis commodi non voluptatibus vitae culpa ad fuga"
     },
     {
         category: "classic",
@@ -67,7 +67,7 @@ const baseProducts: Omit<ProductType, "id" | "title" | "price" | "rating" | "yea
         author: "J. Archive",
         quote: "Timeless stories live forever.",
         pageCount: 420,
-        synopsis: "Lorem ipsum classic..."
+        synopsis: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus eveniet nam modi magnam at sunt laudantium officiis aperiam, iste obcaecati sit distinctio exercitationem dicta itaque praesentium ullam quisquam tempora! Quod. Inventore voluptas cum ea unde dolorem dicta laboriosam corporis! Deserunt, adipisci ex cupiditate veritatis commodi non voluptatibus vitae culpa ad fuga"
     }
 ];
 

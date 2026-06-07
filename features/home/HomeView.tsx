@@ -13,7 +13,7 @@ const HomeView = () => {
             <HeroSection />
             <Banner items={shippingBannerItems} />
             <CategoriesSection />
-            <BestSellersSection />
+            <BestSellersSection title="Best Sellers"/>
             <Quote />
             <Banner items={communityBannerItems} />
             <Subscription />

@@ -12,7 +12,7 @@ type DescriptionProps = {
 const Description = ({ product }: DescriptionProps) => {
     const { title, author, category, rating, quote, pageCount, year, price } = product;
     return (
-        <div className="w-full flex flex-col gap-8 lg:ml-5 p-5 items-center text-center">
+        <div className="w-full flex flex-col gap-8 lg:ml-5 p-5 items-center text-center lg:bg-transparent bg-zinc-700/30">
             <span className="text-white/70 font-[family-name:var(--font-ui)] text-sm font-light">{category.toUpperCase()}</span>
             <div className="flex flex-col gap-1">
                 <h1 className="text-yellow-500 lg:text-5xl text-4xl font-bold tracking-wide">{title}</h1>

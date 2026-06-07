@@ -4,10 +4,14 @@ import SectionLayout from "@/shared/components/layout/SectionLayout";
 import TitleSection from "@/shared/components/titles/TitleSection";
 import GridLayoutContainer from "@/shared/components/layout/GridLayoutContainer";
 
-const BestSellersSection = () => {
+type BestSellersSectionProps = {
+    title: string;
+}
+
+const BestSellersSection = ({ title }: BestSellersSectionProps) => {
     return (
         <SectionLayout className="md:px-4 pb-10">
-            <TitleSection title="Best sellers" />
+            <TitleSection title={title} />
             <GridLayoutContainer className="grid-cols-1">
                 {bestSellers.map((item) => (
                     <BestSellersCard key={item.id} item={item} />
