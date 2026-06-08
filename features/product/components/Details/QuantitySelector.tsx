@@ -1,7 +1,10 @@
-import { useState } from "react";
 
-const QuantitySelector = () => {
-    const [quantity, setQuantity] = useState(1);
+type Props = {
+    quantity: number;
+    setQuantity: React.Dispatch<React.SetStateAction<number>>
+}
+
+const QuantitySelector = ({ quantity, setQuantity }: Props) => {
     return (
         <div className="flex gap-2 items-center text-white/70 font-[family-name:var(--font-custom) font-bold text-xl w-fit border border-white/30 rounded-md">
             <button

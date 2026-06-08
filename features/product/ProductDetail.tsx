@@ -6,13 +6,14 @@ import Content from "./components/Content/Content";
 import Details from "./components/Details/Details";
 import { useProduct } from "./hooks/useProduct";
 import { shippingBannerItems } from "@/shared/data/BannerItems";
+import SkeletonDetail from "./components/loaders/SkeletonDetail";
 
 const ProductDetail = ({productId}:{productId:string}) => {
     const id = Number(productId)
     const {data:product, isLoading} = useProduct(id);
 
     if(isLoading){
-        return <p>Is loading</p>
+        return <SkeletonDetail/>
     }
     if(!product){
         return <p>Product not found</p>

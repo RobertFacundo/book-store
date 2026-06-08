@@ -4,12 +4,14 @@ import { BookOpenText } from 'lucide-react';
 import { Calendar } from 'lucide-react';
 import StatItem from "./StatItem";
 import AddToCartControls from "./AddToCartControls";
+import { useState } from "react";
 
 type DescriptionProps = {
     product: ProductType
 }
 
 const Description = ({ product }: DescriptionProps) => {
+    const [quantity, setQuantity] = useState(1);
     const { title, author, category, rating, quote, pageCount, year, price } = product;
     return (
         <div className="w-full flex flex-col gap-8 lg:ml-5 p-5 items-center text-center lg:bg-transparent bg-zinc-700/30">
@@ -42,7 +44,7 @@ const Description = ({ product }: DescriptionProps) => {
             <div className="text-yellow-500/90 text-5xl font-regular">
                 ${price}
             </div>
-            <AddToCartControls />
+            <AddToCartControls quantity={quantity} setQuantity={setQuantity} product={product}/>
         </div>
     )
 };
