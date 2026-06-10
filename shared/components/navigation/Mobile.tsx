@@ -16,10 +16,15 @@ const Mobile = () => {
             </button>
 
             {isOpen && (
-                <div className="absolute top-full right-0 mt-4 min-w-[200px] rounded-xl bg-black/10 backdrop-blur-xs p-6">
-                    <ul className="flex flex-col gap-4">
-                        <NavLinks onClick={() => setIsOpen(false)} className="nav-link text-lg text-white hover:text-yellow-500" />
-                    </ul>
+                <div className="fixed inset-0 rounded-xl bg-black/10 backdrop-blur-xs p-6 items-center justify-center">
+                    <div className="h-full flex items-center justify-center">
+                        <ul className="flex flex-col items-center gap-10">
+                            <NavLinks
+                                onClick={() => setIsOpen(false)}
+                                className="text-6xl text-white hover:text-yellow-400 transition"
+                            />
+                        </ul>
+                    </div>
                 </div>
             )}
         </div>

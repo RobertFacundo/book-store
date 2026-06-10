@@ -12,10 +12,10 @@ const Cart = () => {
        <>
          <div className="flex lg:flex-row flex-col gap-3 w-full bg-black min-h-screen p-10">
              <Background/>
-             <div className="w-2/3 z-10">
+             <div className="lg:w-2/3 z-10">
                  <ItemGrid />
              </div>
-             <div className="w-1/3 flex items-center z-10">
+             <div className="lg:w-1/3 flex items-center z-10">
                  <Summary />
              </div>
          </div>

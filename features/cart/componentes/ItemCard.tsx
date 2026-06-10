@@ -29,7 +29,7 @@ const ItemCard = ({ item }: ItemCardProps) => {
 
     return (
         <div className="grid grid-cols-[3fr_1fr_1fr] border-b border-white/10 py-2">
-            <div className="flex flex-row gap-6">
+            <div className="flex lg:flex-row flex-col gap-6">
                 <Image src={image} alt={title} className="h-40 w-30" />
                 <div className="flex flex-col gap-2 justify-center text-white">
                     <h1 className="text-3xl font-[family-name:var(--font-display)] tracking-wider">{title}</h1>
