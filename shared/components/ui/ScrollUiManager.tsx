@@ -9,15 +9,14 @@ const ScrollUiManager = ({ children }: { children: React.ReactNode }) => {
     const scrollY = useScroll();
     const isDesktop = useIsDesktop();
 
-    // SOLO en desktop
     const hideNav = isDesktop && scrollY > 120;
 
     return (
 
         <>
-            {!hideNav && <NavBar />}
+            <NavBar hidden={hideNav}/>
             {children}
-            {scrollY > 300 && <ToTopButton />}
+            <ToTopButton visible={scrollY > 300 }/>
         </>
     )
 };

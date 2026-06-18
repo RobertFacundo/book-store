@@ -5,6 +5,7 @@ import NavBar from "@/shared/components/navigation/NavBar";
 import Footer from "@/shared/components/footer/Footer";
 import ReactQueryProvider from "@/shared/providers/ReactQueryProvider";
 import ScrollUiManager from "@/shared/components/ui/ScrollUiManager";
+import LenisProvider from "@/shared/components/ui/LenisProvider";
 
 const italiano = Italianno({
   variable: "--font-display",
@@ -41,6 +42,7 @@ export default function RootLayout({
     >
       <ReactQueryProvider>
         <body className="font-[family-name:var(--font-ui)] min-h-full">
+          <LenisProvider />
           <ScrollUiManager>
             {children}
           </ScrollUiManager>

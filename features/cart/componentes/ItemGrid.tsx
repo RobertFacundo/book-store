@@ -20,7 +20,7 @@ const ItemGrid = () => {
                 </div>
 
 
-                <div className="max-h-[60vh] overflow-y-auto p-5">
+                <div className="max-h-[60vh] overflow-y-auto p-5" data-lenis-prevent>
                     {cart.map(item => (
                         <ItemCard key={item.product.id} item={item} />
                     ))}
