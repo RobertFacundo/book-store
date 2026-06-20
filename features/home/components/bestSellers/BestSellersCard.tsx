@@ -9,7 +9,7 @@ type BestSellersCardProps = {
 const BestSellersCard = ({ item }: BestSellersCardProps) => {
     const { img, title, price, author, rating } = item;
     return (
-        <div className="flex flex-col gap-1 rounded-md bg-zinc-700/20 border border-white/10 transition-all ease-in-out duration-500 hover:scale-105" >
+        <div className="flex best-seller-card flex-col gap-1 rounded-md bg-zinc-700/20 border border-white/10 transition-all ease-in-out duration-500 hover:scale-105" >
             <Image src={img} alt="title" className="h-[500px] sm:h-[450px] md:h-[300px] lg:h-[330px]  px-4 py-2 w-full"/>
             <div className="flex flex-col px-3 pb-3 gap-2 flex-1">
                <div className="flex min-h-[71px] items-center">

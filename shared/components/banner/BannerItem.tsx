@@ -1,11 +1,11 @@
 import { BannerItemType } from "@/shared/data/BannerItems";
 
-type BannerItemProps={
+type BannerItemProps = {
     item: BannerItemType
 }
 
-const BannerItem = ({item}: BannerItemProps) => {
-    const {title, subtitle, icon:Icon} = item;
+const BannerItem = ({ item }: BannerItemProps) => {
+    const { title, subtitle, icon: Icon } = item;
 
     return (
         <div className={`flex flex-col items-center gap-2 lg:gap-4 font-[family-name:var(--font-custom)] pb-0 lg:pb-2 border-b-0 border-r border-zinc-700/50 last:border-r-0`}>

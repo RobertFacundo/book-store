@@ -1,15 +1,31 @@
 import { categoryType } from "@/shared/data/Categories";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
+import {
+    MoonStar,
+    Search,
+    Heart,
+    Rocket,
+    Landmark,
+} from "lucide-react";
 
 type CategoryCardProps = {
     item: categoryType
 }
 
+const icons = {
+    fantasy: MoonStar,
+    mistery: Search,
+    romance: Heart,
+    "science-fiction": Rocket,
+    classic: Landmark,
+}
+
 const CategoryCard = ({ item }: CategoryCardProps) => {
-    const { icon: Icon, title, image } = item;
+    const { title, image } = item;
+    const Icon = icons[item.icon]
     return (
-        <div className="relative h-[270px] group overflow-hidden rounded-lg">
+        <div className="category-card relative h-[270px] group overflow-hidden rounded-lg">
             <Image src={image} alt={title} fill className="object-cover transition-transform ease-in-out duration-500 group-hover:scale-105 " />
             <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent z-10" />
             <div className="absolute left-0 bottom-0 z-50 flex flex-col gap-4  p-3">
