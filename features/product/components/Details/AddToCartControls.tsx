@@ -14,7 +14,7 @@ const AddToCartControls = ({ product, quantity, setQuantity }: Props) => {
     const { status, handleAddToCart } = useAddToCart(product, quantity);
         
     return (
-        <div className="flex flex-col gap-6 items-center">
+        <div className="description-controls flex flex-col gap-6 items-center">
             <QuantitySelector quantity={quantity} setQuantity={setQuantity} />
             <button
                 onClick={handleAddToCart}

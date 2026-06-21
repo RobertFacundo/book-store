@@ -1,6 +1,6 @@
 const SkeletonBox = ({ className }: { className?: string }) => {
     return (
-        <div className={`animate-pulse bg-zinc-700 rounded ${className}`} />
+        <div className={`animate-pulse bg-yellow-700/30 rounded ${className}`} />
     )
 };
 

@@ -2,6 +2,8 @@
 
 import { useFiltersStore } from "@/shared/store/filters/useFiltersStore";
 import { formatCategory } from "../../utils/formatCategory";
+import { useRef } from "react";
+import { useFiltersAnimation } from "../../animations/useFiltersAnimation";
 
 const categoryOptions = [
     "fantasy",
@@ -18,9 +20,12 @@ const Filters = () => {
     const maxPrice = useFiltersStore((state) => state.maxPrice);
     const setMaxPrice = useFiltersStore((state) => state.setMaxPrice);
 
+    const ref = useRef<HTMLDivElement>(null)
+    useFiltersAnimation(ref)
+
     return (
-        <div className="flex flex-col lg:flex-row gap-10 text-white w-full justify-center px-6 py-2 ">
-            <div className="flex gap-3 rounded-xl bg-zinc-900 lg:px-6 px-3 py-2 lg:text-xl text-md">
+        <div ref={ref} className="flex flex-col lg:flex-row gap-10 text-white w-full justify-center px-6 py-2 ">
+            <div className=" buttons flex gap-3 rounded-xl bg-zinc-900 lg:px-6 px-3 py-2 lg:text-xl text-md">
                 {categoryOptions.map((category) => {
                     const isActive = categories.includes(category);
 
@@ -39,7 +44,7 @@ const Filters = () => {
                     );
                 })}
             </div>
-            <div className="flex flex-col gap-2">
+            <div className="price-range flex flex-col gap-2">
                 <label className="text-xl text-zinc-300">
                     Max price: ${maxPrice}
                 </label>

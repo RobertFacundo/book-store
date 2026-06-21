@@ -22,7 +22,7 @@ export const useSubscriptionAnimation = (ref: React.RefObject<HTMLDivElement | n
 
         tl.fromTo(title, {
             opacity: 0,
-            x: 140
+            x: 100
         }, {
             opacity: 1,
             x: 0,
@@ -30,7 +30,7 @@ export const useSubscriptionAnimation = (ref: React.RefObject<HTMLDivElement | n
         })
             .fromTo(description, {
                 opacity: 0,
-                x: 180
+                x: 100
             }, {
                 opacity: 1,
                 x: 0,
@@ -38,7 +38,7 @@ export const useSubscriptionAnimation = (ref: React.RefObject<HTMLDivElement | n
             }, "-=0.2")
             .fromTo(form, {
                 opacity: 0,
-                x: 120
+                x: 100
             }, {
                 opacity: 1,
                 x: 0,
