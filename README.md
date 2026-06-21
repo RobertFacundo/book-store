@@ -3,7 +3,7 @@
 A modern and immersive bookstore ecommerce built with Next.js, TypeScript, and Tailwind CSS.  
 Focused on scalable architecture, reusable components, responsive design, and clean development practices.
 
-
+This project was built to improve my frontend architecture skills and explore advanced UI animation techniques using GSAP and modern React patterns.
 ---
 
 ## ✨ Overview
@@ -71,7 +71,7 @@ The goal is not only building an ecommerce, but also following professional fron
 - 📖 Book Detail 
 - 📱 Fully Responsive Layout
 - ⚡ Optimized Fetching & Caching
-- - 🎬 Advanced GSAP animation system
+- 🎬 Advanced GSAP animation system
 - 🌊 Smooth scrolling experience with Lenis
 
 ---
