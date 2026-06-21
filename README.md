@@ -3,7 +3,6 @@
 A modern and immersive bookstore ecommerce built with Next.js, TypeScript, and Tailwind CSS.  
 Focused on scalable architecture, reusable components, responsive design, and clean development practices.
 
-> ⚠️ Work in Progress — currently under active development.
 
 ---
 
@@ -54,7 +53,7 @@ The goal is not only building an ecommerce, but also following professional fron
 
 ## 🚀 Features
 
-### Current Features
+### Features
 
 - ✅ Responsive Navbar
 - ✅ Mobile Menu
@@ -63,19 +62,17 @@ The goal is not only building an ecommerce, but also following professional fron
 - ✅ Reusable Navigation Components
 - ✅ Clean Folder Architecture
 
-### Planned Features
+### Features
 
 - 📚 Book Catalog
-- 🔎 Search & Filters
+- 🔎 Filters
 - 🛒 Shopping Cart
-- ❤️ Wishlist
-- 👤 User Authentication
-- 💳 Checkout Flow
 - 🌙 Cinematic Hero Section
-- 📖 Book Detail Pages
-- ⭐ Featured Books
+- 📖 Book Detail 
 - 📱 Fully Responsive Layout
 - ⚡ Optimized Fetching & Caching
+- - 🎬 Advanced GSAP animation system
+- 🌊 Smooth scrolling experience with Lenis
 
 ---
 
@@ -110,11 +107,6 @@ The main goal is maintaining:
 - Maintainable structure
 - 
 ---
-## ⚠️ Status
-
-This project is currently a WIP (Work In Progress).
-
-New features, refactors, UI improvements, and optimizations are continuously being added.
 
 ## 📬 Contact
 

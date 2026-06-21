@@ -4,6 +4,9 @@ import Image from "next/image";
 import QuantitySelector from "@/features/product/components/Details/QuantitySelector";
 import { TrashIcon } from "lucide-react";
 import { useCart } from "@/shared/store/cart/useCart";
+import { useRef } from "react";
+import gsap from "gsap";
+import { useAnimateRemoveCardItem } from "../animations/useAnimateRemoteCardItem";
 
 type ItemCardProps = {
     item: CartItem;
@@ -11,14 +14,19 @@ type ItemCardProps = {
 
 const ItemCard = ({ item }: ItemCardProps) => {
     const { category, title, image, author, rating, price, id } = item.product;
+    const cardRef = useRef<HTMLDivElement>(null)
     const quantity = item.quantity
     const totalPrice = price * quantity;
 
     const updateQuantity = useCart(state => state.updateQuantity)
-    const removeFromCart = useCart(state => state.removeFromCart)
+    const removeFromCart = useCart(state => state.removeFromCart);
 
     const handleRemove = () => {
-        removeFromCart(id);
+        if (!cardRef.current) return;
+
+        useAnimateRemoveCardItem(cardRef.current, () => {
+            removeFromCart(id);
+        })
     };
 
     const handleQuantityChange = (
@@ -28,7 +36,8 @@ const ItemCard = ({ item }: ItemCardProps) => {
     };
 
     return (
-        <div className="grid grid-cols-[3fr_1fr_1fr] border-b border-white/10 py-2">
+        <div ref={cardRef}
+            className="grid grid-cols-[3fr_1fr_1fr] border-b border-white/10 py-2">
             <div className="flex lg:flex-row flex-col gap-6">
                 <Image src={image} alt={title} className="h-40 w-30" />
                 <div className="flex flex-col gap-2 justify-center text-white">

@@ -6,10 +6,10 @@ type SynopsisProps = {
 
 const Synopsis = ({ synopsis }: SynopsisProps) => {
     return (
-        <div className="flex flex-col gap-5 p-2">
+        <div className="synopsis-section flex flex-col gap-5 p-2">
             <TitleSection title="Synopsis" />
             <p
-                className="text-white/70 text-xl tracking-wider
+                className="synopsis-text text-white/70 text-xl tracking-wider
                 first-letter:font-[family-name:var(--font-display)]
                 first-letter:text-6xl
                 first-letter:text-yellow-500/90

@@ -7,9 +7,6 @@ export const useProductDetailAnimations = (ref: React.RefObject<HTMLDivElement |
         const element = ref.current;
         if (!element) return;
 
-        const gallerySection = element.querySelector(".gallery-section");
-        const descriptionSection = element.querySelector(".description-section");
-        if (!gallerySection || !descriptionSection) return;
 
         const gallery = element.querySelector(".gallery-grid");
         const thumbnails = element.querySelectorAll(".gallery-thumbnails");
