@@ -57,7 +57,7 @@ const baseProducts: Omit<ProductType, "id" | "title" | "price" | "rating" | "yea
         category: "science-fiction",
         image: scienceFictionBook,
         author: "Z. Nova",
-        quote: "The future is unstable.",
+        quote: "The future is infinite.",
         pageCount: 500,
         synopsis: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus eveniet nam modi magnam at sunt laudantium officiis aperiam, iste obcaecati sit distinctio exercitationem dicta itaque praesentium ullam quisquam tempora! Quod. Inventore voluptas cum ea unde dolorem dicta laboriosam corporis! Deserunt, adipisci ex cupiditate veritatis commodi non voluptatibus vitae culpa ad fuga"
     },
